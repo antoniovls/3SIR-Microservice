@@ -102,11 +102,11 @@
         const url = "http://demo9819589.mockable.io/veiculos"
         fetch(url)
             .then(response => response.json())
-            .then(data => preencherCarros(data))
+            .then(data => preencherVeiculos(data))
             .catch(error => alert(error))
     }
 
-    function preencherCarros(data) {
+    function preencherVeiculos(data) {
         var selection = document.getElementById("select-veiculos")
 
         for (let i = 0; i < data.length; i++) {
